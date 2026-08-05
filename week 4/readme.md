@@ -7,6 +7,7 @@ For this assignment, I created an NBA knowledge base in Prolog. It includes fact
 - `nba_kb.pl` – Prolog knowledge base
 - `test_nba_kb.py` – Python test script
 ## Example commands
-historically_winning(teamname).: checks if a team is historically winning by the standard of 6 championships in franchise history
-conference(teamname, X).: checks the conference of the team
-championships(teamname, X).:checks the amount of championships won by a franchise
+
+- `historically_winning(teamname).`- checks if a team is historically winning by the standard of 6 championships in franchise history
+- `conference(teamname, X).`- checks the conference of the team
+- `championships(teamname, X).`-checks the amount of championships won by a franchise
