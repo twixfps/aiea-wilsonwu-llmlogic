@@ -1,0 +1,24 @@
+Logic-LM Task 5 Test Results
+
+Logic-LM Test
+- Dataset: LogicalDeduction dev
+- Logic programs generated using: GPT-4
+- Examples tested: 20
+- Error count: 0
+- Result: Successful symbolic inference run
+
+Task 4 NBA Knowledge Base Test
+- Historically winning teams: Lakers, Celtics, Warriors, Bulls
+- Western Conference teams: Lakers, Warriors
+- Celtics championships: 18
+- Miami historically winning: False
+
+Setup / Troubleshooting
+- Initially attempted to use Python 3.13.
+- Switched to Python 3.10 for compatibility with the older Logic-LM dependencies.
+- Logic-LM's original requirements.txt contained a machine-specific Conda path for certifi.
+- Installed the necessary dependencies manually.
+- Fixed a Windows UTF-8 decoding issue in logic_inference.py.
+- FOLIO initially encountered a SIGALRM incompatibility on Windows.
+- After fixing the parser, FOLIO reached the Prover9 execution stage but the included executable was incompatible with Windows (WinError 193).
+- Switched to the LogicalDeduction benchmark, which successfully completed 20/20 tests with 0 errors.
