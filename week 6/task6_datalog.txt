@@ -1,0 +1,21 @@
+% Task 6 - Datalog-style logic program
+
+% Facts
+knows(jeb, don).
+knows(don, jeb).
+knows(an, don).
+knows(ed, an).
+
+owns(don, ipad).
+owns(don, ipod).
+owns(jeb, ipod).
+
+% Rules
+happy(X) :- owns(X, ipad), owns(X, ipod).
+
+happy(X) :- knows(X, Y), happy(Y).
+
+unhappy(X) :- owns(X, Y), not happy(X).
+
+#show happy/1.
+#show unhappy/1.
